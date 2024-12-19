@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets/category_card.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -11,26 +12,22 @@ class HomeView extends StatelessWidget {
         elevation: 0,
         backgroundColor: Colors.transparent,
         title: const Row(
-           mainAxisSize: MainAxisSize.min,
+          mainAxisSize: MainAxisSize.min,
           children: [
             Text(
               "News",
-              style: TextStyle(
-                color: Colors.black,
-              ),
+              style:
+                  TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
             ),
             Text(
               "Cloud",
-              style: TextStyle(
-                color: Colors.orange,
-              ),
+              style:
+                  TextStyle(color: Colors.orange, fontWeight: FontWeight.bold),
             ),
           ],
         ),
       ),
-      body: const Column(
-        children: [],
-      ),
+      body: const CategoryCard()
     );
   }
 }
