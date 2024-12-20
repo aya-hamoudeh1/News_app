@@ -10,8 +10,8 @@ class NewsTile extends StatelessWidget {
       children: [
         ClipRRect(
           borderRadius: BorderRadius.circular(6),
-          child: Image.network(
-            "https://gratisography.com/wp-content/uploads/2024/10/gratisography-cool-cat-800x525.jpg",
+          child: Image.asset(
+            "assets/general.jpg",
             height: 200,
             width: double.infinity,
             fit: BoxFit.cover,
@@ -25,7 +25,7 @@ class NewsTile extends StatelessWidget {
           maxLines: 2,
           overflow: TextOverflow.ellipsis,
           style: TextStyle(
-            color: Colors.black87,
+            //color: Colors.black87,
             fontSize: 20,
             fontWeight: FontWeight.w500,
           ),
