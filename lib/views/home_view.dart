@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../widgets/categories_list_view.dart';
+import '../widgets/news_list_view.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -31,7 +31,8 @@ class HomeView extends StatelessWidget {
           ],
         ),
       ),
-      body: const CategoriesListView(),
+      body: const NewsListView(),
     );
   }
 }
+
