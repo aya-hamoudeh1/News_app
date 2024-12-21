@@ -4,15 +4,12 @@ class NewsService {
   final Dio dio;
   NewsService(this.dio);
 
-  void getGeneralNews() async {
-    final response = await dio.get(
-        'https://newsapi.org/v2/everything?q=bitcoin&apiKey=bade7131034e4ec7aa4426e55fb3d6ab');
-    print(response);
-  }
+  getGeneralNews() async {
+    Response response = await dio.get(
+      "https://newsapi.org/v2/top-headlines?apiKey=bade7131034e4ec7aa4426e55fb3d6ab&country=us&category=general",
+    );
+    Map<String, dynamic> jsonData = response.data;
 
-  void getSportsNews() async {
-    final response = await dio.get(
-        'https://newsapi.org/v2/everything?q=bitcoin&apiKey=bade7131034e4ec7aa4426e55fb3d6ab');
-    print(response);
+    List<dynamic> articles = jsonData["articles"];
   }
 }
