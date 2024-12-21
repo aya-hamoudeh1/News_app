@@ -21,11 +21,11 @@ class NewsTile extends StatelessWidget {
           height: 12,
         ),
         const Text(
-          "Large Title Should be placed Large in this place Large Title Should be placed Large in this place ",
+          "Large Title Should be placed Large in this place Large Title Should be placed Large in this place place place place place place place place place ",
           maxLines: 2,
           overflow: TextOverflow.ellipsis,
           style: TextStyle(
-            //color: Colors.black87,
+            color: Colors.black87,
             fontSize: 20,
             fontWeight: FontWeight.w500,
           ),
