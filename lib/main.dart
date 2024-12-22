@@ -10,7 +10,6 @@ void main() {
 
 final dio = Dio();
 
-
 class NewsApp extends StatelessWidget {
   const NewsApp({super.key});
 
