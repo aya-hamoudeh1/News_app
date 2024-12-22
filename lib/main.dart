@@ -4,7 +4,6 @@ import 'package:news_app/services/news_services.dart';
 import 'package:news_app/views/home_view.dart';
 
 void main() {
-  NewsService(Dio()).getNews();
   runApp(const NewsApp());
 }
 
