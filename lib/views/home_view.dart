@@ -45,11 +45,12 @@ class HomeView extends StatelessWidget {
                 height: 32,
               ),
             ),
-            NewsListViewBuilder(),
+            NewsListViewBuilder(
+              category: "general",
+            ),
           ],
         ),
       ),
     );
   }
 }
-
