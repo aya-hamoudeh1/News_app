@@ -34,7 +34,7 @@ class CategoriesListView extends StatelessWidget {
     ),
     CategoryModel(
       image: "assets/sports.jpg",
-      categoryName: "Sport",
+      categoryName: "Sports",
     ),
   ];
   @override
